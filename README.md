@@ -6,10 +6,16 @@ Clone of [ZeroTier Pylon](https://github.com/zerotier/pylon) in Node.js to serve
 
 Not (yet) on npm, so first clone this repo and cd into it, then:
 
+```bash
+npm ci
+npm run build
+```
+
 Global install:
 
 ```bash
-npm install -g ztpylon
+npm install -g .
+npm uninstall -g ztpylon
 ```
 
 Ephemeral:

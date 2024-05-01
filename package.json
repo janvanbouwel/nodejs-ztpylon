@@ -1,0 +1,32 @@
+{
+  "name": "ztpylon",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "exports": null,
+  "bin": "./dist/index.js",
+  "engines": {
+    "node": ">=16"
+  },
+  "author": "Jan Van Bouwel",
+  "license": "ISC",
+  "scripts": {
+    "build": "rimraf dist/ && tsc",
+    "eslint": "eslint src",
+    "prettier": "npx prettier src --write",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@sindresorhus/tsconfig": "^5.0.0",
+    "@types/node": "^20.12.7",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@mutagen-d/node-proxy-server": "^1.0.2",
+    "libzt": "^0.1.3"
+  }
+}

@@ -24,6 +24,12 @@ Ephemeral:
 npx ztpylon <args>
 ```
 
+Or simply:
+
+```bash
+node dist/index.js <args>
+```
+
 ## Usage
 
 See the original [ZeroTier Pylon](https://github.com/zerotier/pylon). Currently only implements `pylon refract`, without relay and without the option to specify UDP port.
